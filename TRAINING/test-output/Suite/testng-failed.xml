@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="none">
+  <test name="Test">
+    <classes>
+      <class name="com.crm.vtiger.organizationtest.OrgTest"/>
+      <class name="com.crm.vtiger.campaigntest.CampaignTest"/>
+    </classes>
+  </test> <!-- Test -->
+  <test name="Test(failed)" parallel="none">
+    <classes>
+      <class name="com.crm.vtiger.organizationtest.OrgTest">
+        <methods>
+          <include name="launchBrowser"/>
+          <include name="closeReport"/>
+          <include name="loginToApp"/>
+          <include name="GenerateExtReport"/>
+          <include name="logoutFromApp"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- com.crm.vtiger.organizationtest.OrgTest -->
+      <class name="com.crm.vtiger.campaigntest.CampaignTest">
+        <methods>
+          <include name="launchBrowser"/>
+          <include name="loginToApp"/>
+          <include name="createCampaign"/>
+          <include name="logoutFromApp"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- com.crm.vtiger.campaigntest.CampaignTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
