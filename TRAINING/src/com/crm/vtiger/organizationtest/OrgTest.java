@@ -37,7 +37,10 @@ public class OrgTest extends BaseTest
 		 Assert.assertEquals(orgInfoData, orgName); 
 		 logger.log(LogStatus.PASS, "Organization is created");
 		report.endTest(logger);
+		
+		System.out.println("hello"); 
+		
 	}
-	}
+}
 
 
